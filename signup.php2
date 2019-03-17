@@ -155,7 +155,7 @@ $title = 'Demo';
 
 						//if action is joined show sucess
 						if(isset($_GET['action']) && $_GET['action'] == 'joined'){
-							echo "<p class='bg-success'>Registration successful, please check your email to activate your account.</p>";
+							echo "<p class='bg-success'>Registration successful, You can now login</p>";
 						}
 						?>
 					<span class="login100-form-avatar">
