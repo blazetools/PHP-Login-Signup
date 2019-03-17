@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gt IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title>NPanel v0.1 Documentation</title>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/doc.css">
+</head>
+
+<body>
+  <header class="navbar navbar-default navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <nav class="collapse navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a href="mailto:johnistanojevic97@gmail.com?Subject=NPanel%20Support" target="_blank">Support</a> </li>
+        </ul>
+      </nav>
+      <!-- Navigation end -->
+    </div>
+    <!-- Container end -->
+  </header>
+  <!-- Header end -->
+  <div id="content" class="sub-content">
+    <div class="container">
+      <div class="col-md-12">
+        <h1 class="super">Welcome!</h1>
+        <p class="lead">NPanel documentation. You will find everything here which will help you to build a site.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container bs-docs-container text-dark">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="bs-sidebar hidden-print affix-top" role="complementary">
+          <ul class="nav bs-sidenav">
+            <li>
+              <a href="#getting-started">Getting Started</a>
+              <ul class="nav">
+                <li> <a href="#welcome"> Welcome </a> </li>
+                <li> <a href="#folder-structure"> Folder structure </a> </li>
+                <li> <a href="#installation"> Installation </a> </li>
+            </li>
+            </ul>
+            </li>
+            <!-- li header end -->
+            <li><a href="#customizing-npanel">Customizing NPanel</a>
+              <ul class="nav">
+                <li> <a href="#changing-dbase"> Changing database connection </a> </li>
+                <li> <a href="#changing-mailer"> Changing PHPMailer info </a> </li>
+              </ul>
+            </li>
+
+            <!-- li header end -->
+            <li><a href="#credit-source">Credits and Sources</a>
+            </li>
+            <!-- li header end -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="bs-docs-section">
+          <h1 id="getting-started"> Getting started </h1>
+          <h2 id="welcome"> Welcome </h2>
+          <p> Hello there! Thanks for buying NPanel. This is a Login/Register script(template) made with PHP, MySQL, HTML, CSS, Javascript, jQuery and other modern jQuery plugins. This script(template) has made especially for new coders to make it easier with starting a site. <br> <br>            This template uses <a href="http://getbootstrap.com/">Twiter's Bootstrap Framework</a> and custom CSS. </p>
+          <h2 id="folder-structure"> Folder structure </h2>
+          <p> Once you download the zip file of npanel, unzip it. You should have a folder named NPanel with the following folders.
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Folder</th>
+                  <th style="text-align:left">Contents</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Documentation</td>
+                  <td style="text-align:left">Documentation and help instructions.</td>
+                </tr>
+                <tr>
+                  <td>NPanel</td>
+                  <td style="text-align:left">NPanel Script file.</td>
+                </tr>
+              </tbody>
+            </table><br>
+            <p><b>NPanel Script file</b> contain these folders and files.</p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Folder</th>
+                  <th style="text-align:left">Contents</th>
+                </tr>
+              </thead>
+              <tbody>
+              	<tr>
+                  <td>classes</td>
+                  <td style="text-align:left">Core files for hashing password and PHP classes also containt and PHPmailer for verification and reset mail.</td>
+                </tr>
+                <tr>
+                  <td>css</td>
+                  <td style="text-align:left">All CSS style used in NPanel.</td>
+                </tr>
+                <tr>
+                  <td>fonts</td>
+                  <td style="text-align:left">All files used in NPanel.</td>
+                </tr>
+                <tr>
+                  <td>images</td>
+                  <td style="text-align:left">All images used in NPanel.</td>
+                </tr>
+                <tr>
+                  <td>includes</td>
+                  <td style="text-align:left">Contain a config file required to connect with database and many others.</td>
+                </tr>
+                <tr>
+                  <td>js</td>
+                  <td style="text-align:left">All javascript files used in NPanel.</td>
+                </tr>
+                <tr>
+                  <td>vendor</td>
+                  <td style="text-align:left">All files used in NPanel.</td>
+                </tr>
+                <tr>
+                  <td>activate.php</td>
+                  <td style="text-align:left">File to activate user after register.</td>
+                </tr>
+                <tr>
+                  <td>dashboard.php</td>
+                  <td style="text-align:left">Homepage of NPanel.</td>
+                </tr>
+                <tr>
+                  <td>index.php</td>
+                  <td style="text-align:left">Index page/Login page of NPanel.</td>
+                </tr>
+                <tr>
+                  <td>logout.php</td>
+                  <td style="text-align:left">Required to process logout user.</td>
+                </tr>
+                <tr>
+                  <td>reset.php</td>
+                  <td style="text-align:left">Page to require new password.</td>
+                </tr>
+                <tr>
+                  <td>resetpassword.php</td>
+                  <td style="text-align:left">Confirm password(last step).</td>
+                </tr>
+                <tr>
+                  <td>signup.php</td>
+                  <td style="text-align:left">Register page.</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+          <h2 id="installation"> Installation </h2>
+          <p> Install the template via ftp :
+            <ol>
+              <li> Connect to your website host, using some of many FTP clients, for example FileZilla. </li>
+              <li> Go to your default server folder, and copy NPanel files into that folder. </li>
+              <li> Create MySQL database and replace all info with yours data. </li>
+              <li> Import inside database our DB file(it's located inside NPanel folder with name DB.sql. </li>
+            </ol>
+          </p>
+          <h1 id="customizing-npanel">Customizing NPanel</h1>
+          <h2 id="changing-dbase"> Changing database connection </h2>
+          <p> You can simply change database info in a few steps: Inside folder INCLUDES->CONFIG.php
+            <pre>
+	<code>
+		&lt;define('DBHOST',' '); //here put your host, probably localhost
+                define('DBUSER',' '); //your MySQL username
+                define('DBPASS',' '); //your MySQL password
+                define('DBNAME',' '); //your MySQL database name&gt;
+
+	</code>
+</pre>
+          </p>
+          <h2 id="changing-mailer"> Changing PHPMailer info </h2>
+          <p> To change SMTP mail info, go to CLASSES->PHPMAILER->MAIL.php<br>
+            <br>
+            <pre>
+          	<code>
+
+              &lt; public $From     = ' '; //your email here
+                public $FromName = SITETITLE;
+                public $Host     = ' '; //your SMTP server (you can use smtp.gmail.com service)
+                public $Mailer   = 'smtp';
+                public $SMTPAuth = true;
+                public $Username = ' '; //your email to send mail
+                public $Password = ' '; //your password of email
+                public $SMTPSecure = 'tls'; //protocol TLS or SSL
+                public $WordWrap = 75;&lt;
+
+	</code></pre> 
+          </p>
+
+          <h2 id="credit-source">Credits and Sources</h2>
+          <p>
+            Images used from:
+            <ul>
+            	<li><a href="https://freepik.com/">Freepik</a></li>
+            </ul> <br>
+            Icon fonts:
+            <ul>
+              <li><a href="https://fontawesome.com">Font awesome</a></li>
+            </ul> <br>
+            <a href="https://getbootstrap.com/">Bootstrap</a> <br> <br>
+            <a href="http://jquery.com/">JQuery</a> <br> <br>
+          </p>
+          
+          <br> <br> <br>
+          <p>Ok, we're done. Wish you have a good and popular site with NPanel. Best of luck. If you face any problem contact us via e-mail by clicking the support link at top.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+
+</html>
